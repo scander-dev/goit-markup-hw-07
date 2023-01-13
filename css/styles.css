@@ -68,10 +68,35 @@ a {
 	padding-bottom: 120px;
 }
 
-.container {
+/* .container {
 	width: 1158px;
 	margin: 0 auto;
 	padding: 0 15px;
+} */
+
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+	.container {
+		width: 428px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		width: 768px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.container {
+		width: 1200px;
+	}
 }
 
 /*============= Header ==============*/
@@ -81,10 +106,10 @@ a {
 	box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.header-container {
+/* .header-container {
 	display: flex;
 	align-items: center;
-}
+} */
 
 .header-logo {
 	font-family: "Raleway";
@@ -158,6 +183,8 @@ a {
 	color: var(--focused-links-color);
 }
 
+/*============= Header ==============*/
+
 /*============= Mein =============*/
 
 .solution {
@@ -209,7 +236,9 @@ a {
 	border-radius: 4px;
 }
 
-/*=========== Section Description ============*/
+/*============= Mein =============*/
+
+/*======== Section Description =========*/
 
 .visually-hidden {
 	position: absolute;
@@ -254,6 +283,8 @@ a {
 	letter-spacing: 0.02em;
 }
 
+/*======== Section Description =========*/
+
 /*============ Section Work =============*/
 
 .work {
@@ -274,6 +305,8 @@ a {
 	display: flex;
 	gap: 24px;
 }
+
+/*============ Section Work =============*/
 
 /*============ Section Team =============*/
 
@@ -346,6 +379,8 @@ a {
 	background-color: var(--valid-fields-color);
 }
 
+/*============ Section Team =============*/
+
 /*========== Section Customers ===========*/
 
 .customers-title {
@@ -384,6 +419,8 @@ a {
 .customers-list-ikon {
 	fill: currentColor;
 }
+
+/*======= Section Customers =======*/
 
 /*========== Footer ===========*/
 
@@ -460,7 +497,9 @@ a {
 	background-color: var(--valid-fields-color);
 }
 
-/*========== Footer Subscribe ==========*/
+/*========== Footer ===========*/
+
+/*======== Footer Subscribe ========*/
 
 .footer-subscribe {
 	display: flex;
@@ -532,7 +571,9 @@ a {
 	fill: #f4f4fd;
 }
 
-/*========== Стили для портфолио ==========*/
+/*======== Footer Subscribe ========*/
+
+/*======== Стили для портфолио ========*/
 
 .descript {
 	padding: 120px 0;
@@ -634,6 +675,8 @@ a {
 	letter-spacing: 0.02em;
 }
 
+/*======== Стили для портфолио ========*/
+
 /*========= Modal Window ===========*/
 
 .backdrop {
@@ -693,6 +736,8 @@ a {
 .modal-close-btn:focus .modal-close-btn-icon {
 	fill: var(--background-color);
 }
+
+/*========= Modal Window ===========*/
 
 /*========== Modal Form ==========*/
 
@@ -850,3 +895,5 @@ a {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 }
+
+/*========== Modal Form ==========*/
