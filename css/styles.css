@@ -74,19 +74,6 @@ a {
 	padding: 0 15px;
 } */
 
-.container {
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
-@media screen and (min-width: 480px) {
-	.container {
-		width: 428px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-}
-
 @media screen and (min-width: 768px) {
 	.container {
 		width: 768px;
@@ -101,15 +88,57 @@ a {
 
 /*============= Header ==============*/
 
-.header {
-	background: #ffffff;
-	box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+.container {
+	padding-left: 16px;
+	padding-right: 16px;
 }
 
-/* .header-container {
+@media screen and (min-width: 480px) {
+	.container {
+		width: 428px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.header-list {
+		display: none;
+	}
+	.contakts {
+		display: none;
+	}
+}
+
+.header {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.header-container {
 	display: flex;
 	align-items: center;
-} */
+	justify-content: space-between;
+}
+
+.mobile-menu-open {
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	line-height: 0;
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		width: 768px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.container {
+		width: 1440px;
+	}
+}
 
 .header-logo {
 	font-family: "Raleway";
@@ -127,7 +156,17 @@ a {
 	transition: color var(--transition);
 }
 
-.navigation {
+/* .header {
+	background: #ffffff;
+	box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.header-container { 
+	display: flex;
+	align-items: center;
+}  */
+
+/* .navigation { 
 	margin-left: 77px;
 }
 
@@ -181,9 +220,9 @@ a {
 .contakts-link:hover,
 .contakts-link:focus {
 	color: var(--focused-links-color);
-}
+} */
 
-/*============= Header ==============*/
+/*==== Header ====*/
 
 /*============= Mein =============*/
 
@@ -236,7 +275,7 @@ a {
 	border-radius: 4px;
 }
 
-/*============= Mein =============*/
+/*==== Mein ====*/
 
 /*======== Section Description =========*/
 
@@ -283,7 +322,7 @@ a {
 	letter-spacing: 0.02em;
 }
 
-/*======== Section Description =========*/
+/*==== Section Description ====*/
 
 /*============ Section Work =============*/
 
