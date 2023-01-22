@@ -108,20 +108,14 @@ a {
 	.contakts {
 		display: none;
 	}
-}
-
-.header {
-	padding-top: 24px;
-	padding-bottom: 24px;
+	.header {
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
 }
 
 .header-container {
-	display: flex;
-	align-items: center;
 	justify-content: space-between;
-	padding-left: 16px;
-	padding-right: 16px;
-	/*	 position: relative; */
 }
 
 .mobile-menu-open {
@@ -134,6 +128,7 @@ a {
 /* ==== Mobile Menu ==== */
 
 .mobile-menu {
+	display: flex;
 	position: fixed;
 	width: 100%;
 	height: 100%;
@@ -155,14 +150,15 @@ a {
 	opacity: 1;
 	visibility: visible;
 	pointer-events: auto;
-	/* transform: translateX(0); */
+	transform: translateX(0);
 }
 
 .mobile-menu-container {
 	position: relative;
-	padding-left: 40px;
+	padding-left: 25px;
 	padding-top: 80px;
-	padding-bottom: 40px;
+	display: flex;
+	flex-direction: column;
 }
 
 .mobile-menu-close-btn {
@@ -178,12 +174,23 @@ a {
 	background-color: var(--hairlines-color);
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0;
-	transition: background-color var(--transition);
+	transition: background-color var(--transition), box-shadow var(--transition), fill var(--transition);
+}
+
+.mobile-menu-close-btn:hover,
+.mobile-menu-close-btn:active {
+	box-shadow: 0px 1px 6px rgb(46 47 66 / 8%), 0px 1px 1px rgb(46 47 66 / 16%), 0px 2px 1px rgb(46 47 66 / 8%);
+	border-color: var(--button-color);
+	fill: var(--background-color);
 }
 
 .nav-list-mobile {
-	width: 151px;
-	height: 200px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.nav-item-mobile {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.11;
@@ -192,40 +199,42 @@ a {
 	color: var(--main-text-color);
 }
 
-.nav-item-mobile:not(:last-child) {
-	padding-bottom: 40px;
-}
-
 .social-wrap {
 	margin-top: auto;
 }
 
 .contacts-mobile {
+	margin-top: auto;
+	margin-bottom: 48px;
 }
 
 .contacts-link-mobile-tel {
-	width: 337px;
-	height: 40px;
 	font-weight: 600;
 	font-size: 36px;
 	line-height: 1.11;
 	text-transform: capitalize;
 	color: var(--focused-links-color);
+	transition: color var(--transition);
 }
 
 .contacts-link-mobile {
+	margin-top: 40px;
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
 	color: var(--secondary-text-color);
+	transition: color var(--transition);
+}
+
+.contacts-link-mobile-tel:hover,
+.contacts-link-mobile:hover {
+	color: var(--button-color);
 }
 
 .social-list-mobile {
 	display: flex;
-	justify-content: center;
 	gap: 56px;
-	margin-top: 48px;
 }
 
 .social-list-link-mobile {
@@ -239,9 +248,12 @@ a {
 	transition: background-color var(--transition);
 }
 
-.social-list-link-mobile:hover,
-.social-list-link-mobile:focus {
+.social-list-link-mobile:hover {
 	background-color: var(--valid-fields-color);
+}
+
+.social-list-icon {
+	fill: var(--light-background-color);
 }
 
 @media screen and (min-width: 768px) {
